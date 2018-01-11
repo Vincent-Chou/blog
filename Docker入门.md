@@ -45,7 +45,9 @@
 	docker ps -a
 	
 	进入容器
-	docker attach
+	docker attach -- 不推荐，当attach从容器退出时，会导致容器停止
+	
+	docker exec -i -t
 	
 	删除容器
 	docker container rm
